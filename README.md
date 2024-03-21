@@ -1,3 +1,17 @@
+README:
+
+Line 2 + 3 looks like this:
+src_folder = '/Users/pan/osskoletest/'
+dst_folder = '/Users/pan/osskoledestination/'
+
+To change where the source folder and the destination folder is, change these parameters: Everything within the '.....' is changeable, so you could replace source with '/Your/source/folder/' and destination folder with '/Your/destination/folder/'
+
+
+
+
+
+
+
 Crontab dokumentation:
 
 ➜  ~ crontab -l
