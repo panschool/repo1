@@ -41,9 +41,14 @@ date_format = today.strftime("-%d-%m-%Y %H:%M:%S")
 for file_name in os.listdir(src_folder):
     source = src_folder + file_name
     destination = dst_folder + file_name + date_format
+    # Check if the source is a file
     if os.path.isfile(source):
         shutil.copy(source, destination)
-        print("Copied", file_name)
+        print("Copied", file_name + date_format)
+    # Check if the source is a directory
+    elif os.path.isdir(source):
+        shutil.copytree(source, destination)
+        print("Copied directory", file_name + date_format)
 
 
 print("Files copied to /Users/pan/osskoledestination")
